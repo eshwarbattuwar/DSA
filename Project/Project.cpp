@@ -120,11 +120,10 @@ int main() {
         cout << "1. Insert " << endl;
         cout << "2. Search " << endl;
         cout << "3. Delete " << endl;
-        cout << "4. Display Elements " << endl;
-        cout << "5. Display In-Order " << endl;
-        cout << "6. Display Pre-Order " << endl;
-        cout << "7. Display Post-Order " << endl;
-        cout << "8. Exit " << endl;
+        cout << "4. Display In-Order " << endl;
+        cout << "5. Display Pre-Order " << endl;
+        cout << "6. Display Post-Order " << endl;
+        cout << "7. Exit " << endl;
         cout << "Enter your choice: ";
         cin >> choice;
 
@@ -150,21 +149,18 @@ int main() {
                 bst.displayInOrder();
                 break;
             case 5:
-                bst.displayInOrder();
-                break;
-            case 6:
                 bst.displayPreOrder();
                 break;
-            case 7:
+            case 6:
                 bst.displayPostOrder();
                 break;
-            case 8:
+            case 7:
                 cout << "Exiting program." << endl;
                 break;
             default:
                 cout << "Invalid choice. Please try again." << endl;
         }
-    } while (choice != 8);
+    } while (choice != 7);
     return 0;
 }
 
